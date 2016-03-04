@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+  background-color: #fafafa;
+  // background-color: blue;
+  padding-top: 2.25rem;
+}
+
+.site-branding {
+  background-color: #ffffff;
+  // background-color: red;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  // background-color: yellow;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.social ul {
+  background-color: white;
+  display: flex;
+  list-style: none;
+  color: #808080;
+}
+
+.social li {
+  padding: 1rem;
+}
+
+.main-navigation {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-menu {
+}
+
+.menu li {
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+}
+
+.search-form fieldset {
+border: none;
+}
+
+
+
+.search-form input {
+  border: none;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.search-submit {
+  border: none;
+  background-color: #fafafa;
+  font-size: 1rem;
+  color: #808080;
+}
