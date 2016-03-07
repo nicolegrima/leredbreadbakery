@@ -25,8 +25,17 @@
 				<div class="site-branding">
 						<div class="logo">
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-							<img src="htdocs/wp-content/themes/leredbread/images/lrb-logo.svg" />
+							<!-- <img src="htdocs/wp-content/themes/leredbread/images/lrb-logo.svg" /> -->
+							<!-- <img src="url('.get_template_directory_uri().'/images/lrb-logo.svg)" /> -->
+							<!-- <img src="url('.get_template_directory_uri().'htdocs/wp-content/themes/ledredbread/images/lrb-logo.svg)" /> -->
+							<!-- <div id="header-image"> -->
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							   <img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" alt="Logo" width="" height="" />
+							</a>
+							<!-- </div> -->
+
 						</div><!-- .logo -->
 
 						<div class="social">

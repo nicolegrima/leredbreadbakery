@@ -3,3 +3,63 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.testimonials-section {
+  // background-color: pink;
+  // color: blue;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-section h2 {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.testimonial-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.indiv-testimonial {
+  width: 50%;
+  padding: 2rem;
+  display:flex;
+}
+
+.indiv-testimonial img {
+  height: 7rem;
+  width: 7rem;
+  padding: 1rem;
+}
+
+.testimonial-text {
+  line-height: 1rem;
+  flex: 1 1 60%;
+}
+
+.testimonial-text span {
+  color: red;
+}
+
+.testimonial-text h3 {
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-text p {
+  margin-top: 0.5rem;
+}
+
+.testimonial-one,
+.testimonial-two {
+  border-bottom: 1px dashed #d2d2d2;
+}
+
+.testimonial-one,
+.testimonial-three {
+  border-right: 1px dashed #d2d2d2;
+}

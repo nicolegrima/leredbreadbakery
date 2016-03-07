@@ -32,6 +32,11 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.entry-title a {
+	color: red;
+	text-decoration: none;
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -46,4 +51,11 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+/* General */
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
 }

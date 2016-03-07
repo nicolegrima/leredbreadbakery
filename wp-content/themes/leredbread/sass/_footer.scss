@@ -3,10 +3,43 @@
 --------------------------------------------------------------*/
 
 .site-footer {
+  // height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-details {
   background-color: #222222;
-  height: 200px;
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+
+.business-block {
+  width: 33.33%;
+  margin: 3rem 0;
+}
+
+.contact h3,
+.hours h3 {
+  text-transform: uppercase;
+}
+
+.contact i {
+  padding-right: 0.5rem;
 }
 
 .site-info {
-  color: #222222;
+  display: flex;
+  background-color: #333333;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.site-info p {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8rem;
 }
