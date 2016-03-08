@@ -22,55 +22,44 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-						<div class="logo">
-							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-							<!-- <img src="htdocs/wp-content/themes/leredbread/images/lrb-logo.svg" /> -->
-							<!-- <img src="url('.get_template_directory_uri().'/images/lrb-logo.svg)" /> -->
-							<!-- <img src="url('.get_template_directory_uri().'htdocs/wp-content/themes/ledredbread/images/lrb-logo.svg)" /> -->
-							<!-- <div id="header-image"> -->
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							   <img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" alt="Logo" width="" height="" />
-							</a>
-							<!-- </div> -->
 
-						</div><!-- .logo -->
+				<div class="site-branding container">
+
+						<div class="logo">
+								<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+								<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							  	 <img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" alt="Logo" width="" height="" />
+								</a>
+						</div><!-- .logo child of .site-branding-->
 
 						<div class="social">
-							<ul>
-								<li><i class="fa fa-facebook"></i></li>
-								<li><i class="fa fa-twitter"></i></li>
-								<li><i class="fa fa-google-plus"></i></li>
-								<li><i class="fa fa-envelope"></i></li>
-							</ul>
+								<ul>
+									<li><i class="fa fa-facebook"></i></li>
+									<li><i class="fa fa-twitter"></i></li>
+									<li><i class="fa fa-google-plus"></i></li>
+									<li><i class="fa fa-envelope"></i></li>
+								</ul>
 
-						</div><!-- .social -->
+						</div><!-- .social child of .site-branding-->
 
-				</div><!-- .site-branding -->
+					</div><!-- .site-branding -->
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<div class="navbar">
-							<div class="navigation-menu">
-											<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-											<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<div class="navbar container">
 
-							</div> <!-- .navigation-menu -->
+							<div class="navigation-menu">
+										<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+										<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							</div> <!-- .navigation-menu child of .navbar-->
 
 							<div class="header-search">
-									<form role="search" method="get" class="search-form" action="">
-										<fieldset>
-													<label>
-														<input type="search" placeholder="Search ..." value="" class="search-field">
-													</label>
+										<?php get_search_form(); ?>
+							</div> <!-- .header-search child of .navbar-->
 
-													<button class="search-submit"><i class="fa fa-search"></i></button>
-										</fieldset>
-									</form>
-							</div> <!-- .header-search-->
-					</div>
+					</div> <!-- .navbar -->
 				</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->
