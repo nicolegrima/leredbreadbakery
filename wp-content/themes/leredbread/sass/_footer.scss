@@ -3,21 +3,19 @@
 --------------------------------------------------------------*/
 
 .site-footer {
-  // height: 200px;
   display: flex;
   flex-direction: column;
+  background-color: #222222;
 }
 
 .business-details {
-  background-color: #222222;
   color: #ffffff;
   display: flex;
-  width: 100%;
 }
 
 .business-block {
   width: 33.33%;
-  margin: 3rem 0;
+  margin: 2rem 2rem;
 }
 
 .contact h3,
@@ -32,14 +30,16 @@
 .site-info {
   display: flex;
   background-color: #333333;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  width: 100%;
 }
 
 .site-info p {
   color: #ffffff;
-  text-decoration: none;
-  font-size: 0.8rem;
+  // text-decoration: none;
+  // font-size: 0.8rem;
+}
+
+.copyright {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

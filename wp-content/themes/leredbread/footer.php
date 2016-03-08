@@ -12,6 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 
 				<div class="business-details container">
+
 						<div class="contact business-block">
 							<h3>Contact</h3>
 							<p><i class="fa fa-envelope"></i>info@leredbread.com</p>
@@ -36,15 +37,17 @@
 							<p><strong>Saturday:</strong> 10am to 2pm</p>
 							<p><strong>Sunday:</strong> Closed</p>
 						</div>
-				</div>
+				</div><!-- .business-details -->
 
 
-				<div class="site-info container">
+				<div class="site-info">
+					<div class="copyright container">
 						<p>
 								<?php printf( esc_html( 'Copyright &copy;'), ''); ?>
 								<?php echo date('Y'); ?>
 								<?php printf( esc_html( 'Le Red Bread'), ''); ?>
 						</p>
+					<div>
 				</div><!-- .site-info -->
 
 			</footer><!-- #colophon -->

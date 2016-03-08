@@ -484,6 +484,55 @@ input::placeholder {
   color: #808080; }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #222222; }
+
+.business-details {
+  color: #ffffff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.business-block {
+  width: 33.33%;
+  margin: 2rem 2rem; }
+
+.contact h3,
+.hours h3 {
+  text-transform: uppercase; }
+
+.contact i {
+  padding-right: 0.5rem; }
+
+.site-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333333; }
+
+.site-info p {
+  color: #ffffff; }
+
+.copyright {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
@@ -681,6 +730,26 @@ a {
   width: 1024px;
   margin: 0 auto; }
 
+/* Hero */
+.hero {
+  background-image: url(../../images/hero-bread.jpg);
+  background-size: cover;
+  height: 550px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.hero-text {
+  color: #ffffff;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -807,52 +876,3 @@ object {
 .testimonial-one,
 .testimonial-three {
   border-right: 1px dashed #d2d2d2; }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.site-footer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.business-details {
-  background-color: #222222;
-  color: #ffffff;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
-
-.business-block {
-  width: 33.33%;
-  margin: 3rem 0; }
-
-.contact h3,
-.hours h3 {
-  text-transform: uppercase; }
-
-.contact i {
-  padding-right: 0.5rem; }
-
-.site-info {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #333333;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 0;
-  width: 100%; }
-
-.site-info p {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.8rem; }

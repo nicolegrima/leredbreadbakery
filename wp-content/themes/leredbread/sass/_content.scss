@@ -59,3 +59,23 @@
 	width: 1024px;
 	margin: 0 auto;
 }
+
+/* Hero */
+
+
+.hero {
+	background-image: url(../../images/hero-bread.jpg);
+	background-size: cover;
+	height: 550px;
+	margin-top: 4rem;
+	margin-bottom:3rem;
+	display: flex;
+	align-items: center;
+}
+
+.hero-text {
+	color: #ffffff;
+	font-size: 6rem;
+	text-transform: uppercase;
+	text-align: center;
+}
