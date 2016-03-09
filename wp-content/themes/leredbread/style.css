@@ -896,3 +896,21 @@ object {
 .testimonial-one,
 .testimonial-three {
   border-right: 1px dashed #d2d2d2; }
+
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
+/* Product Archive */
+.product-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.product-list article {
+  -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%; }

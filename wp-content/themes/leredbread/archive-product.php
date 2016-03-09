@@ -18,6 +18,7 @@ get_header(); ?>
               making delicious treats.</p>
         </header><!-- .page-header -->
 
+				<div class="product-list">
 
 		    <?php if ( have_posts() ) : ?>
 			    <?php /* Start the Loop */ ?>
@@ -26,13 +27,15 @@ get_header(); ?>
 
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+							<div class="product-image">
               <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail( 'medium' ); ?>
               <?php endif; ?>
-
-              <?php the_title( '<p class="entry-title">', '</p>' ); ?>
-              <?php echo CFS()->get( 'price' ); ?>
-
+							<div>
+              <div class="product-details">
+                  <?php the_title( '<p class="entry-title">', '</p>' ); ?>
+                  <?php echo CFS()->get( 'price' ); ?>
+              </div>
           </article>
 
           <?php endwhile; // End of the while loop. ?>
@@ -41,6 +44,8 @@ get_header(); ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
           <?php endif; // End of the loop ?>
+
+				</div><!-- .product-list -->
 
       </div><!-- .container -->
 

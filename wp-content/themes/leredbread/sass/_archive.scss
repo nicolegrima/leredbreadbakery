@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
+
+/* Product Archive */
+
+.product-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product-list article {
+  flex: 1 1 25%;
+}
