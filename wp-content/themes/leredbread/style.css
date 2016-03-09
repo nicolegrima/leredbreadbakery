@@ -750,6 +750,26 @@ a {
   text-transform: uppercase;
   text-align: center; }
 
+/* About Page */
+.about-header {
+  text-align: center;
+  margin: 7rem 0 4rem 0;
+  background-color: red; }
+
+.about-title {
+  text-transform: uppercase; }
+
+.about-subtitle {
+  text-align: center; }
+
+.about-blocks {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about-block-item {
+  width: 50%; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
