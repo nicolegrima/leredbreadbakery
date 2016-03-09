@@ -10,11 +10,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-
-			<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				 <img src="<?php echo get_template_directory_uri(); ?>/images/hero-bread.jpg" alt="Bread Banner Image" width="" height="" />
-			</a> -->
-
 		<section class="hero">
 			<h1 class="hero-text">Baked to Perfection.</h1>
 		</section>
