@@ -70,6 +70,7 @@
 	margin-bottom:3rem;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .hero-text {
@@ -102,4 +103,19 @@
 
 .about-block-item {
 	width: 50%;
+}
+
+/* Blog Page - Index.php */
+
+.column-view {
+	display: flex;
+}
+
+.blog-area {
+  width: 70%;
+}
+
+.sidebar-area {
+  width: 30%;
+	border-left: 1px solid #e1e1e1;
 }

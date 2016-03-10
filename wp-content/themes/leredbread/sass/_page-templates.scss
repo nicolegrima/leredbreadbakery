@@ -4,9 +4,78 @@
 
 /* Front page */
 
+/** Product Category **/
+
+.product-category-section {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-category-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product-category-single {
+  width: 25%;
+  padding: 1.5rem;
+}
+
+.product-category-single img {
+  height: 6rem;
+  width: 10rem;
+}
+
+.product-category-single h3 {
+  text-transform: uppercase;
+}
+
+.product-category-single a {
+  text-decoration: none;
+  color: red;
+}
+
+/** Recent Posts **/
+
+.recent-posts-section {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-posts-section h2 {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.latest-news-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.latest-news-single {
+  width: 25%;
+}
+
+.latest-news-single a {
+  text-decoration: none;
+  color: grey;
+}
+
+.latest-thumb-wrapper {
+  // width: 98%;
+}
+
+/** Testimonials **/
+
 .testimonials-section {
-  // background-color: pink;
-  // color: blue;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
