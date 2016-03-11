@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+<div class="container column-view">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -51,5 +53,11 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div id="secondary" class="sidebar-area">
+		<?php get_sidebar(); ?>-
+	</div><!-- #secondary -->
+
+	</div><!-- .container -->
 
 <?php get_footer(); ?>

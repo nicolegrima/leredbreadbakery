@@ -36,7 +36,7 @@
 
 .product-category-single a {
   text-decoration: none;
-  color: red;
+  color: $color__red-shade;
 }
 
 /** Recent Posts **/
@@ -112,7 +112,7 @@
 }
 
 .testimonial-text span {
-  color: red;
+  color: $color__red-shade;
 }
 
 .testimonial-text h3 {
