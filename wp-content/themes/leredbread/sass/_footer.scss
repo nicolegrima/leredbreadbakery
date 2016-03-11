@@ -18,13 +18,20 @@
   margin: 2rem 2rem;
 }
 
-.contact h3,
-.hours h3 {
+.business-block h3 {
+  color:$color__med-grey;
   text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.business-block p {
+  margin-bottom: 0.35rem;
+  margin-top: 0.65rem;
 }
 
 .contact i {
   padding-right: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .site-info {
@@ -38,8 +45,22 @@
   // font-size: 0.8rem;
 }
 
+.alternate-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hours {
+  padding-left: 4rem;
+}
+
 .copyright {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.copyright p {
+  font-size: 0.85rem;
 }

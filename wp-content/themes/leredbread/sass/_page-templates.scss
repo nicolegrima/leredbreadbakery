@@ -26,12 +26,14 @@
 }
 
 .product-category-single img {
-  height: 6rem;
-  width: 10rem;
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 80%;
 }
 
 .product-category-single h3 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .product-category-single a {

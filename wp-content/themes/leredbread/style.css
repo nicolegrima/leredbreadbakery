@@ -297,7 +297,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
-h1 {
+h1, h3 {
   font-family: "Overlock", serif; }
 
 /* Copy */
@@ -491,7 +491,12 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  color: #808080; }
+  color: #808080;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  margin-top: 2rem; }
 
 .social li {
   padding: 1rem; }
@@ -565,12 +570,18 @@ input::placeholder {
   width: 33.33%;
   margin: 2rem 2rem; }
 
-.contact h3,
-.hours h3 {
-  text-transform: uppercase; }
+.business-block h3 {
+  color: #808080;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem; }
+
+.business-block p {
+  margin-bottom: 0.35rem;
+  margin-top: 0.65rem; }
 
 .contact i {
-  padding-right: 0.5rem; }
+  padding-right: 0.5rem;
+  font-size: 1.3rem; }
 
 .site-info {
   display: -webkit-flex;
@@ -580,6 +591,20 @@ input::placeholder {
 
 .site-info p {
   color: #ffffff; }
+
+.alternate-logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.hours {
+  padding-left: 4rem; }
 
 .copyright {
   -webkit-justify-content: center;
@@ -591,6 +616,9 @@ input::placeholder {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.copyright p {
+  font-size: 0.85rem; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -850,7 +878,8 @@ p .city {
   color: #ffffff;
   font-size: 6rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 2px 1px 2px rgba(100, 100, 100, 0.75); }
 
 /* About Page */
 .about-header {
@@ -995,11 +1024,13 @@ object {
   padding: 1.5rem; }
 
 .product-category-single img {
-  height: 6rem;
-  width: 10rem; }
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 80%; }
 
 .product-category-single h3 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .product-category-single a {
   text-decoration: none;

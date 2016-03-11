@@ -19,9 +19,11 @@
 							<p><i class="fa fa-phone"></i>(555) 343 456 7891</p>
 
 								<div>
+									<p>
 									<i class="fa fa-facebook-square"></i>
 									<i class="fa fa-twitter-square"></i>
 									<i class="fa fa-google-plus-square"></i>
+								</p>
 								</div>
 						</div>
 
