@@ -90,7 +90,23 @@ function red_starter_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+		// only for single.php
+	if ( is_single() ) {
+		// to link up jquery - super simple
+
+			wp_enqueue_script('jquery');
+
+			wp_enqueue_script('lrb_comment_close', get_template_directory_uri() . '/js/script.js', array('jquery'), false, true);
+
+			wp_localize_script('lrb_comment_close', 'lrb_vars', array(
+				'rest_url' => esc_url_raw( rest_url() ),
+				'comment_nonce' => wp_create_nonce('wp_rest'),
+				'post_id' => get_the_ID()
+			) );
+	}
 }
+
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 /**
@@ -102,3 +118,31 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+// slide 4/33 step 2
+
+// function lrb_comment_close_ajax() {
+//
+// 	check_ajax_referer('lrb_comment_status', 'security');
+// 	//if user can't edit STOP function
+// 	if (! current_user_can('edit_posts') ) {
+// 		exit;
+// 	}
+// 	// to get the post ID no
+// 	$id = $_POST['the_post_id'];
+//
+// 	if (isset($id) && is_numeric($id) ) {
+// 		$the_post = array(
+// 			'ID' => $id,
+// 			'comment_status' => 'closed'
+// 		);
+// 		// array as argument - what is inside array, what WP will update
+// 		wp_update_post( $the_post );
+// 	}
+//
+// 	exit;
+//
+// }
+//
+// add_action('wp_ajax_red_comment_ajax', 'lrb_comment_close_ajax');

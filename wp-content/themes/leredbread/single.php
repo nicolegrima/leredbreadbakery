@@ -7,8 +7,9 @@
 
 get_header(); ?>
 
+<div class="container column-view">
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area blog-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -24,10 +25,19 @@ get_header(); ?>
 				endif;
 			?>
 
+
+				<button type="button" id="close-comments">Close Comments</button>
+
+
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	<div id="secondary" class="sidebar-area">
+		<?php get_sidebar(); ?>-
+	</div><!-- #secondary -->
+
+	</div><!-- .container -->
+
 <?php get_footer(); ?>

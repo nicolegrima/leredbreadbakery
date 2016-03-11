@@ -683,6 +683,30 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }
+
+.widget-title {
+  text-transform: uppercase; }
+
+.widget ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
+
+.widget a {
+  text-decoration: none;
+  color: red; }
+
+.day-of-week {
+  color: red;
+  font-weight: bold; }
+
+.text-widget a {
+  color: red; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -773,7 +797,7 @@ a {
 .about-block-item {
   width: 50%; }
 
-/* Blog Page - Index.php */
+/* Blog Page - Index.php & single.php */
 .column-view {
   display: -webkit-flex;
   display: -ms-flexbox;
