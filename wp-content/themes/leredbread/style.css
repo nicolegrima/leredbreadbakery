@@ -704,8 +704,23 @@ a {
   color: red;
   font-weight: bold; }
 
-.text-widget a {
+.textwidget a {
   color: red; }
+
+.textwidget i {
+  margin-right: 1rem; }
+
+.textwidget p {
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem; }
+
+p .city {
+  margin-left: 1.8rem;
+  margin-top: 0; }
+
+.lrb_hours-class p {
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem; }
 
 /*--------------------------------------------------------------
 # Content
