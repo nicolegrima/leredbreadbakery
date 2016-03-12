@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="container column-view">
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area fouroh4-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">

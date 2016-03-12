@@ -10,6 +10,8 @@
     <h2>What others say about us</h2>
   </div>
 
+  <hr class="classy fa fa-circle">
+
   <div class="testimonial-list">
 
       <div class="testimonial-one indiv-testimonial">

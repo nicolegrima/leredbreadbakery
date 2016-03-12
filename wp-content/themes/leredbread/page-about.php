@@ -17,6 +17,8 @@ get_header(); ?>
               <p>We are a team of creative and talented individuals who love making delicious treats.</p>
         </header><!-- .entry-header -->
 
+				<hr class="classy fa fa-circle">
+
       	<div class="entry-content about-content">
 
           <div class="about-blocks">
@@ -56,11 +58,11 @@ get_header(); ?>
               produce our fabulous range according to the original recipes passed down from generations of
               master bread artisans.</p>
 
-              <section class="suggestions">
+              <section class="click-through">
                 <p>
                    <span>Feel free to contact us with any questions coments or suggestions.
                      We even take custom orders!</span>
-                   <a href="/contact/" class="btn">Contact Us</a>
+                   <a href="/contact/" class="button">Contact Us</a>
                 </p>
               </section>
 

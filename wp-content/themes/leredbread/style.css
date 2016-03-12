@@ -297,7 +297,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: "Overlock", serif; }
 
 /* Copy */
@@ -403,36 +403,27 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
+.button,
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border: none;
   border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  background: #400c0d;
+  cursor: pointer;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 0.75rem 1.5rem;
+  text-decoration: none; }
+  .button:hover,
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    background: #64393a;
+    text-decoration: underline; }
 
 /* Fields */
 input[type="text"],
@@ -814,6 +805,25 @@ p .city {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.classy {
+  color: #e1e1e1;
+  margin: 0 auto 1.75rem;
+  max-width: 320px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.classy:before {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute; }
+
 .sticky {
   display: block; }
 
@@ -857,12 +867,16 @@ p .city {
   width: 1024px;
   margin: 0 auto; }
 
+.content-area {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
 /* Hero */
 .hero {
   background-image: url(../../images/hero-bread.jpg);
   background-size: cover;
   height: 550px;
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -884,14 +898,19 @@ p .city {
 /* About Page */
 .about-header {
   text-align: center;
-  margin: 7rem 0 4rem 0;
-  background-color: red; }
+  margin: 3rem 0 2rem 0; }
 
 .about-title {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 0.25rem; }
+
+.about-header p {
+  margin-top: 0.5rem; }
 
 .about-subtitle {
-  text-align: center; }
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem; }
 
 .about-blocks {
   display: -webkit-flex;
@@ -899,7 +918,17 @@ p .city {
   display: flex; }
 
 .about-block-item {
-  width: 50%; }
+  width: 50%;
+  padding: 2rem 0.5rem 1rem 0.5rem; }
+
+.about-block-item h3 {
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.about-block-item .sub-head {
+  color: #a1a1a1;
+  margin-top: 0; }
 
 /* Blog Page - Index.php & single.php */
 .column-view {
@@ -908,11 +937,21 @@ p .city {
   display: flex; }
 
 .blog-area {
-  width: 70%; }
+  width: 70%;
+  padding-right: 2rem; }
 
 .sidebar-area {
   width: 30%;
   border-left: 1px solid #e1e1e1; }
+
+/* 404 Page */
+.fouroh4-area {
+  width: 70%;
+  padding-right: 2rem; }
+
+/* Single Product Page */
+.single-product-title {
+  text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Contact Page / page.php
@@ -924,11 +963,52 @@ p .city {
   display: flex; }
 
 .contact-area {
-  width: 70%; }
+  width: 70%;
+  padding-right: 2rem; }
 
 .sidebar-area {
   width: 30%;
   border-left: 1px solid #e1e1e1; }
+
+.entry-header h1 {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.entry-content h2 {
+  color: #808080;
+  font-size: 1.8rem; }
+
+.wpcf7-form input {
+  color: #ffffff;
+  font-size: 1rem; }
+
+.wpcf7-form label {
+  color: #808080;
+  font-size: 1rem;
+  font-weight: bold; }
+
+.wpcf7-form label .required {
+  color: #db272a;
+  font-size: 1.25rem;
+  padding-left: 0.25rem; }
+
+.wpcf7-form .subject input {
+  width: 100%; }
+
+.wpcf7-form .split-field {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wpcf7-form .name {
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
+
+.wpcf7-form .email {
+  -webkit-flex: 1 1 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -989,6 +1069,30 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Click Through Sections on Front Page and About Page
+--------------------------------------------------------------*/
+.click-through {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  padding: 1.5rem;
+  margin-top: 3rem; }
+
+.click-through p {
+  width: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem; }
+
+.click-through .button {
+  color: #ffffff;
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Page Templates

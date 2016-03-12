@@ -4,6 +4,22 @@
 
 /* Posts and pages */
 
+.classy {
+	color: #e1e1e1;
+	margin: 0 auto 1.75rem;
+	max-width: 320px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.classy:before {
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
 .sticky {
 	display: block;
 }
@@ -60,13 +76,18 @@
 	margin: 0 auto;
 }
 
+.content-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 /* Hero */
 
 .hero {
 	background-image: url(../../images/hero-bread.jpg);
 	background-size: cover;
 	height: 550px;
-	margin-top: 4rem;
+	margin-top: 1rem;
 	margin-bottom:3rem;
 	display: flex;
 	align-items: center;
@@ -86,16 +107,22 @@
 .about-header {
 	// display: flex;
 	text-align:center;
-	margin: 7rem 0 4rem 0;
-	background-color: red;
+	margin: 3rem 0 2rem 0;
 }
 
 .about-title {
 	text-transform: uppercase;
+	margin-bottom: 0.25rem;
+}
+
+.about-header p {
+	margin-top: 0.5rem;
 }
 
 .about-subtitle {
 	text-align:center;
+	font-size: 2rem;
+	margin-top: 0.5rem;
 }
 
 .about-blocks {
@@ -104,7 +131,20 @@
 
 .about-block-item {
 	width: 50%;
+	padding: 2rem 0.5rem 1rem 0.5rem;
 }
+
+.about-block-item h3 {
+	font-size: 1.6rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.about-block-item .sub-head {
+	color: $color__lightgrey;
+	margin-top: 0;
+}
+
 
 /* Blog Page - Index.php & single.php */
 
@@ -114,9 +154,23 @@
 
 .blog-area {
   width: 70%;
+	padding-right: 2rem;
 }
 
 .sidebar-area {
   width: 30%;
 	border-left: 1px solid #e1e1e1;
+}
+
+/* 404 Page */
+
+.fouroh4-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+/* Single Product Page */
+
+.single-product-title {
+	text-transform: uppercase;
 }

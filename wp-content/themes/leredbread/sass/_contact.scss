@@ -9,9 +9,53 @@
 
 .contact-area {
   width: 70%;
+	padding-right: 2rem;
 }
 
 .sidebar-area {
   width: 30%;
   border-left: 1px solid #e1e1e1;
+}
+
+.entry-header h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.entry-content h2 {
+	color: $color__med-grey;
+	font-size: 1.8rem;
+}
+
+.wpcf7-form input {
+	color: #ffffff;
+	font-size: 1rem;
+}
+
+.wpcf7-form label {
+	color: $color__med-grey;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.wpcf7-form label .required{
+	color: $color__red-shade;
+	font-size: 1.25rem;
+	padding-left: 0.25rem;
+}
+
+.wpcf7-form .subject input {
+	width: 100%;
+}
+
+
+.wpcf7-form .split-field {
+	display: flex;
+}
+
+.wpcf7-form .name {
+	flex: 1 1 50%;
+}
+.wpcf7-form .email {
+	flex: 1 1 50%;
 }

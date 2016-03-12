@@ -19,10 +19,10 @@ get_header(); ?>
 				<?php get_template_part('template-parts/product-category');?>
 			</section> <!--close .product-category-section-->
 
-			<section class="products-bait">
+			<section class="click-through">
 			  <p>
 			  	<span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
-			  	<a href="/products/" class="btn">See Our Products</a>
+			  	<a href="/products/" class="button">See Our Products</a>
 			  </p>
 			</section>
 
