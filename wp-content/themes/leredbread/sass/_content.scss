@@ -1,208 +1,33 @@
 /*--------------------------------------------------------------
-# Content
+# Content (Files in Template-Parts Folder that begin with content)
+	content-single.php
+	content-type.php
 --------------------------------------------------------------*/
 
-/* Posts and pages */
+/* For Single.php (Single Blog Post) Content-Single.php */
 
-.classy {
-	color: #e1e1e1;
-	margin: 0 auto 1.75rem;
-	max-width: 320px;
-	padding: 0;
-	position: relative;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-
-.classy:before {
-	transform: translate(-50%,-50%);
-	position: absolute;
-}
-
-.sticky {
-	display: block;
-}
-
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
-
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
-
-.entry-title a {
-	color: $color__red-shade;
-	text-decoration: none;
-}
-
-/* Asides */
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
-	display: block;
-}
-
-/* General */
-
-.container {
-	width: 1024px;
-	margin: 0 auto;
-}
-
-.content-area {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
-/* Hero */
-
-.hero {
-	background-image: url(../../images/hero-bread.jpg);
-	background-size: cover;
-	height: 550px;
-	margin-top: 1rem;
-	margin-bottom:3rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.hero-text {
-	color: #ffffff;
-	font-size: 6rem;
-	text-transform: uppercase;
-	text-align: center;
-	text-shadow: 2px 1px 2px rgba(100,100,100,.75);
-}
-
-/* About Page */
-
-.about-header {
-	// display: flex;
-	text-align:center;
-	margin: 3rem 0 2rem 0;
-}
-
-.about-title {
-	text-transform: uppercase;
-	margin-bottom: 0.25rem;
-}
-
-.about-header p {
-	margin-top: 0.5rem;
-}
-
-.about-subtitle {
-	text-align:center;
-	font-size: 2rem;
-	margin-top: 0.5rem;
-}
-
-.about-blocks {
-	display: flex;
-}
-
-.about-block-item {
-	width: 50%;
-	padding: 2rem 0.5rem 1rem 0.5rem;
-}
-
-.about-block-item h3 {
-	font-size: 1.6rem;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.about-block-item .sub-head {
+.entry-meta {
 	color: $color__lightgrey;
-	margin-top: 0;
 }
 
-
-/* Blog Page - Index.php & single.php */
-
-.column-view {
-	display: flex;
-}
-
-.blog-area {
-  width: 70%;
-	padding-right: 2rem;
-}
-
-.sidebar-area {
-  width: 30%;
-	border-left: 1px solid #e1e1e1;
-}
-
-/* 404 Page */
-
-.fouroh4-area {
-	width: 70%;
-	padding-right: 2rem;
-}
-
-/* Single Product Page */
-
-.single-product-title {
-	text-transform: uppercase;
-}
-
-.price {
-	font-size: 1.5rem;
-}
-
-.single-area {
-	width: 70%;
-	padding-right: 2rem;
-}
-
-/* Search Results Page */
-
-.search-results-area {
-	width: 70%;
-	padding-right: 2rem;
-}
-
-.page-title {
-		text-transform: uppercase;
-}
-
-.entry-content a,
-.entry-summary a  {
+.entry-footer a,
+.entry-meta a {
 	color: $color__red-shade;
-	font-weight: bold;
 	text-decoration: none;
 }
 
-/* Taxonomy Product Type / Content-Type.php */
+blockquote {
+	border-left: 7px solid $color__red-shade;
+	color: $color__med-grey;
+	margin-left: 0;
+	padding-left: 1.5rem;
+}
+
+.cat-links {
+	margin-right: 1rem;
+}
+
+/* For Taxonomy-Product-Type.php (Archive of Product Type) Content-Type.php */
 
 .product-type-area {
 	width: 70%;
@@ -228,45 +53,14 @@
 .product-type-content {
 	width: 75%;
 	margin-top: 0;
-}
 
-.product-type-content h2 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-}
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+	}
 
-.product-type-content p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
-/* Content-Single.php */
-
-.entry-meta {
-	color: $color__lightgrey;
-}
-
-.entry-footer a,
-.entry-meta a {
-	color: $color__red-shade;
-	text-decoration: none;
-}
-
-blockquote {
-	border-left: 7px solid $color__red-shade;
-	color: $color__med-grey;
-	margin-left: 0;
-	padding-left: 1.5rem;
-	// quotes: "" "";
-}
-
-.cat-links {
-	margin-right: 1rem;
-}
-
-/* Archive by Month archive.php */
-
-.month-archive-area {
-  width: 70%;
-	padding-right: 2rem;
+	p {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
 }

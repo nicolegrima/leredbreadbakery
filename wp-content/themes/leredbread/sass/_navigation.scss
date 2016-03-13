@@ -7,9 +7,9 @@
 a {
 	color: $color__link;
 
-	&:visited {
-		color: $color__link-visited;
-	}
+	// &:visited {
+	// 	color: $color__link-visited;
+	// }
 	&:hover,
 	&:focus,
 	&:active {
@@ -92,6 +92,16 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		color: $color__brown;
+
+		&:after {
+			content: "";
+			background-color: $color__red-shade;
+			display: block;
+			height: 3px;
+			margin-top: -3px;
+			width: 100%;
+		}
 	}
 }
 

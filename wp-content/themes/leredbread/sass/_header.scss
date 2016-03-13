@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Header
+# Header / Style for header.php
 --------------------------------------------------------------*/
 
 .site-header {
@@ -21,10 +21,10 @@
 }
 
 .social ul {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   list-style: none;
-  color: #808080;
+  color: $color__med-grey;
   align-items: center;
   margin-bottom: 0;
   margin-top: 2rem;
@@ -48,6 +48,15 @@
 .menu li {
   padding: 1rem;
   border: 1px solid #e1e1e1;
+
+    a {
+      color: $color__med-grey;
+      font-weight: bold;
+
+      &:hover {
+        color: $color__text-main;
+      }
+    }
 }
 
 .search-form fieldset {
@@ -60,12 +69,12 @@ border: none;
 
 input::placeholder {
   text-transform: uppercase;
-  color: #808080;
+  color: $color__med-grey;
 }
 
 .search-submit {
   border: none;
   background-color: #fafafa;
   font-size: 1rem;
-  color: #808080;
+  color: $color__med-grey;
 }

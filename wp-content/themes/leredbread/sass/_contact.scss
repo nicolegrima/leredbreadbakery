@@ -1,9 +1,10 @@
 /*--------------------------------------------------------------
-# Contact Page / page.php
+# Contact Page / Style for page.php
+  (Page.php used for Contact Page)
 --------------------------------------------------------------*/
-/** Page.php used for Contact Page **/
 
-.column-view {
+.column-view,
+.wpcf7-form .split-field {
 	display: flex;
 }
 
@@ -36,26 +37,19 @@
 	color: $color__med-grey;
 	font-size: 1rem;
 	font-weight: bold;
-}
 
-.wpcf7-form label .required{
-	color: $color__red-shade;
-	font-size: 1.25rem;
-	padding-left: 0.25rem;
+		.required{
+				color: $color__red-shade;
+				font-size: 1.25rem;
+				padding-left: 0.25rem;
+		}
 }
 
 .wpcf7-form .subject input {
 	width: 100%;
 }
 
-
-.wpcf7-form .split-field {
-	display: flex;
-}
-
+.wpcf7-form .email,
 .wpcf7-form .name {
-	flex: 1 1 50%;
-}
-.wpcf7-form .email {
 	flex: 1 1 50%;
 }

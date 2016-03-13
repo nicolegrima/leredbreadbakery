@@ -1,10 +1,12 @@
 /*--------------------------------------------------------------
-# Page Templates
+# Page Templates (Files in Template-Parts Folder that don't begin with content)
+  product-category.php
+  product-icons.php
+  recent-posts.php
+  home-testimonials.php
 --------------------------------------------------------------*/
 
-/* Front page */
-
-/** Product Category **/
+/** Product Category - for Front Page **/
 
 .product-category-section {
   display: flex;
@@ -23,37 +25,81 @@
 .product-category-single {
   width: 25%;
   padding: 1.5rem;
+
+     img {
+        display: block;
+        margin: 0 auto 1.5rem;
+        width: 80%;
+     }
+
+      h3 {
+       text-transform: uppercase;
+       text-align: center;
+     }
+
+      a {
+       text-decoration: none;
+       color: $color__red-shade;
+     }
 }
 
-.product-category-single img {
-  display: block;
-  margin: 0 auto 1.5rem;
-  width: 80%;
+/** Product Icons - for Product Archive Page **/
+
+.product-icons-section {
+  margin-top:1rem;
 }
 
-.product-category-single h3 {
-  text-transform: uppercase;
-  text-align: center;
+.product-details {
+  padding: .75rem 1rem;
+  display: flex;
+
+     span p,
+     span {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
-.product-category-single a {
-  text-decoration: none;
-  color: $color__red-shade;
+.product-title-single {
+  width: 25%;
+  padding: 1.5rem;
+
+     img {
+        display: block;
+        margin: 0 auto 1.5rem;
+        width: 80%;
+     }
+
+      h3 {
+       text-transform: uppercase;
+       text-align: center;
+     }
+
+      a {
+       text-decoration: none;
+       color: $color__brown;
+
+       &:hover {
+         text-decoration: underline;
+       }
+
+     }
 }
 
-/** Recent Posts **/
+
+/** Recent Posts - for Front Page **/
 
 .recent-posts-section {
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.recent-posts-section h2 {
-  text-transform: uppercase;
-  width: 100%;
+     h2 {
+        text-transform: uppercase;
+        width: 100%;
+    }
 }
 
 .latest-news-list {
@@ -64,18 +110,48 @@
 
 .latest-news-single {
   width: 25%;
-}
+  border: 1px solid #e1e1e1;
 
-.latest-news-single a {
-  text-decoration: none;
-  color: grey;
+    h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+    }
+
+    .entry-meta {
+      margin-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+   a {
+      text-decoration: none;
+      color: $color__med-grey;
+      display:inline-block;
+      width: 225px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;;
+        color: $color__red-shade;
+      }
+   }
 }
 
 .latest-thumb-wrapper {
-  // width: 98%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 270px;
+      width: 270px;
+      position: absolute;
+    }
 }
 
-/** Testimonials **/
+/** Testimonials - for Front Page **/
 
 .testimonials-section {
   display: flex;
@@ -83,11 +159,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.testimonials-section h2 {
-  text-transform: uppercase;
-  width: 100%;
+     h2 {
+        text-transform: uppercase;
+        width: 100%;
+    }
 }
 
 .testimonial-list {
@@ -100,29 +176,30 @@
   width: 50%;
   padding: 2rem;
   display:flex;
-}
 
-.indiv-testimonial img {
-  height: 7rem;
-  width: 7rem;
-  padding: 1rem;
+    img {
+      height: 7rem;
+      width: 7rem;
+      padding: 1rem;
+    }
 }
 
 .testimonial-text {
   line-height: 1rem;
   flex: 1 1 60%;
-}
 
-.testimonial-text span {
-  color: $color__red-shade;
-}
+    span {
+      color: $color__red-shade;
+    }
 
-.testimonial-text h3 {
-  margin-bottom: 0.25rem;
-}
+    h3 {
+      margin-bottom: 0.25rem;
+    }
 
-.testimonial-text p {
-  margin-top: 0.5rem;
+    p {
+      margin-top: 0.5rem;
+    }
+
 }
 
 .testimonial-one,

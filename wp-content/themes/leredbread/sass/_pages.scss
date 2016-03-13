@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------
+# Pages (Files not in Template-Parts Folder - for Pages & sections within Pages)
+  404.php
+  single-product.php
+  search.php
+  index.php
+  single.php
+  page-about.php
+  hero section for front-page.php
+--------------------------------------------------------------*/
+
+/* 404 Page */
+
+.fouroh4-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+/* Single Product Page */
+
+.single-product-title {
+	text-transform: uppercase;
+}
+
+.price {
+	font-size: 1.5rem;
+}
+
+.single-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+/* Search Results Page */
+
+.search-results-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+.page-title {
+		text-transform: uppercase;
+}
+
+.entry-content a,
+.entry-summary a  {
+	color: $color__red-shade;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Blog Post(s) Page - Index.php & single.php */
+
+.column-view {
+	display: flex;
+}
+
+.blog-area {
+  width: 70%;
+	padding-right: 2rem;
+}
+
+.sidebar-area {
+  width: 30%;
+	border-left: 1px solid #e1e1e1;
+}
+
+/* About Page */
+
+.about-header {
+	text-align:center;
+	margin: 3rem 0 2rem 0;
+}
+
+.about-title {
+	text-transform: uppercase;
+	margin-bottom: 0.25rem;
+}
+
+.about-header p {
+	margin-top: 0.5rem;
+}
+
+ .entry-content .about-subtitle {
+  color: $color__text-main;
+	text-align:center;
+	font-size: 2rem;
+	margin-top: 0.5rem;
+}
+
+.about-blocks {
+	display: flex;
+}
+
+.about-block-item {
+	width: 50%;
+	padding: 2rem 0.5rem 1rem 0.5rem;
+
+  h3 {
+  	font-size: 1.6rem;
+  	margin-top: 0;
+  	margin-bottom: 0;
+  }
+}
+
+.about-block-item .sub-head {
+	color: $color__lightgrey;
+	margin-top: 0;
+}
+
+/* Hero Section - for front-page.php */
+
+.hero {
+	background-image: url(../../images/hero-bread.jpg);
+	background-size: cover;
+	height: 550px;
+	margin-top: 1rem;
+	margin-bottom:3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-text {
+	color: #ffffff;
+	font-size: 6rem;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 1px 2px rgba(100,100,100,.75);
+}

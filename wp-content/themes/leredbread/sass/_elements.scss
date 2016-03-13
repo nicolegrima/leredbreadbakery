@@ -68,3 +68,73 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+// .page-content,
+// .entry-content,
+// .entry-summary {
+// 	margin: $base__space-unit 0 0;
+// }
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.entry-title a {
+	color: $color__red-shade;
+	text-decoration: none;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Hr element */
+
+.classy {
+	color: #e1e1e1;
+	margin: 0 auto 1.75rem;
+	max-width: 320px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.classy:before {
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+/* General */
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.content-area {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}

@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
-# Archive
+# Archive /Style for archive.php (blog posts by month) and archive-product.php
 --------------------------------------------------------------*/
+
+/* Archive by Month  */
+
+.month-archive-area {
+  width: 70%;
+	padding-right: 2rem;
+}
 
 /* Product Archive */
 
@@ -8,52 +15,26 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-}
 
-.product-list article {
-  flex: 1 1 25%;
-  border: 1px solid #e1e1e1;
-  display: flex;
+    article {
+        flex: 1 1 25%;
+        border: 1px solid #e1e1e1;
+        display: flex;
+   }
 }
 
 .archive-product-header {
   margin-top: 3rem;
   justify-content: center;
   align-items: center;
-}
 
-.archive-product-header p {
-  text-align: center;
-  margin-bottom: 2rem;
+     p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 .archive-product-title {
   text-transform: uppercase;
   text-align: center;
-}
-
-.product-icons-section {
-  margin-top:1rem;
-}
-
-.product-details {
-  padding: .75rem 1rem;
-}
-
-.product-details {
-  display: flex;
-}
-
-.product-details span p,
-.product-details span {
-  display: block;
-  margin: 0 auto;
-}
-
-.product-category-single a {
-  color: $color__brown;
-}
-
-.product-category-single a:hover {
-  text-decoration: underline;
 }

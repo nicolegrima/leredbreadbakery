@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Footer
+# Footer / Style for footer.php
 --------------------------------------------------------------*/
 
 .site-footer {
@@ -16,17 +16,17 @@
 .business-block {
   width: 33.33%;
   margin: 2rem 2rem;
-}
 
-.business-block h3 {
-  color:$color__med-grey;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem;
-}
+    h3 {
+      color:$color__med-grey;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
 
-.business-block p {
-  margin-bottom: 0.35rem;
-  margin-top: 0.65rem;
+     p {
+       margin-bottom: 0.35rem;
+       margin-top: 0.65rem;
+     }
 }
 
 .contact i {
@@ -37,12 +37,11 @@
 .site-info {
   display: flex;
   background-color: #333333;
-}
 
-.site-info p {
-  color: #ffffff;
-  // text-decoration: none;
-  // font-size: 0.8rem;
+    p {
+      color: #ffffff;
+    }
+
 }
 
 .alternate-logo {
@@ -59,8 +58,8 @@
   justify-content: center;
   align-items: center;
   display: flex;
-}
 
-.copyright p {
-  font-size: 0.85rem;
+     p {
+      font-size: 0.85rem;
+     }
 }
