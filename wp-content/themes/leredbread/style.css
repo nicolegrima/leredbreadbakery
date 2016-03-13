@@ -953,6 +953,77 @@ p .city {
 .single-product-title {
   text-transform: uppercase; }
 
+.price {
+  font-size: 1.5rem; }
+
+.single-area {
+  width: 70%;
+  padding-right: 2rem; }
+
+/* Search Results Page */
+.search-results-area {
+  width: 70%;
+  padding-right: 2rem; }
+
+.page-title {
+  text-transform: uppercase; }
+
+.entry-content a,
+.entry-summary a {
+  color: #db272a;
+  font-weight: bold;
+  text-decoration: none; }
+
+/* Taxonomy Product Type / Content-Type.php */
+.product-type-area {
+  width: 70%;
+  padding-right: 2rem; }
+
+.product-type-header {
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
+.indiv-product-type {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px dashed #d2d2d2; }
+
+.product-type-img {
+  width: 25%;
+  padding-right: 1.25rem; }
+
+.product-type-content {
+  width: 75%;
+  margin-top: 0; }
+
+.product-type-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+.product-type-content p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+/* Content-Single.php */
+.entry-meta {
+  color: #a1a1a1; }
+
+.entry-footer a,
+.entry-meta a {
+  color: #db272a;
+  text-decoration: none; }
+
+blockquote {
+  border-left: 7px solid #db272a;
+  color: #808080;
+  margin-left: 0;
+  padding-left: 1.5rem; }
+
+.cat-links {
+  margin-right: 1rem; }
+
 /*--------------------------------------------------------------
 # Contact Page / page.php
 --------------------------------------------------------------*/
@@ -1093,6 +1164,88 @@ object {
 .click-through .button {
   color: #ffffff;
   font-size: 1rem; }
+
+/*--------------------------------------------------------------
+# Comments / single.php
+--------------------------------------------------------------*/
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label {
+  color: #808080;
+  font-size: 1rem;
+  font-weight: bold; }
+
+.comment-form-author label .required,
+.comment-form-email label .required {
+  color: #db272a;
+  font-size: 1.25rem;
+  padding-left: 0.1rem; }
+
+.form-submit input {
+  color: #ffffff;
+  font-size: 1rem; }
+
+.comment-form-author,
+.comment-form-email {
+  float: left; }
+
+.comment-form-author {
+  margin-right: 1rem; }
+
+.comment-form-url input {
+  width: 100%; }
+
+.comment-form-author label,
+.comment-form-author input {
+  width: 100%; }
+
+.comment-form-email label,
+.comment-form-email input {
+  width: 100%; }
+
+.comments-title {
+  color: #808080; }
+
+.comment-list {
+  margin-left: 0;
+  padding-left: 0; }
+
+.comment-list li {
+  list-style: none; }
+
+.comment-body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.25rem; }
+
+.comment-author-avatar {
+  -webkit-flex: 1 1 12%;
+      -ms-flex: 1 1 12%;
+          flex: 1 1 12%; }
+
+.comment-content {
+  -webkit-flex: 1 1 88%;
+      -ms-flex: 1 1 88%;
+          flex: 1 1 88%; }
+
+.comment-author-avatar img {
+  border-radius: 50%; }
+
+.comment-metadata {
+  color: #808080; }
+
+.comment-metadata a {
+  color: #db272a; }
+
+.comment-author {
+  font-weight: bold;
+  font-style: normal; }
+
+.reply {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1256,4 +1409,48 @@ object {
 .product-list article {
   -webkit-flex: 1 1 25%;
       -ms-flex: 1 1 25%;
-          flex: 1 1 25%; }
+          flex: 1 1 25%;
+  border: 1px solid #e1e1e1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.archive-product-header {
+  margin-top: 3rem;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center; }
+
+.archive-product-header p {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.archive-product-title {
+  text-transform: uppercase;
+  text-align: center; }
+
+.product-icons-section {
+  margin-top: 1rem; }
+
+.product-details {
+  padding: .75rem 1rem; }
+
+.product-details {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.product-details span p,
+.product-details span {
+  display: block;
+  margin: 0 auto; }
+
+.product-category-single a {
+  color: #400c0d; }
+
+.product-category-single a:hover {
+  text-decoration: underline; }

@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="container column-view">
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area single-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 
       	<div class="entry-content">
 
-					<?php echo CFS()->get( 'price' ); ?>
+					<h3 class="price">Price: <?php echo CFS()->get( 'price' ); ?></h3>
       		<?php the_content(); ?>
 
       	</div><!-- .entry-content -->

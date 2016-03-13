@@ -174,3 +174,92 @@
 .single-product-title {
 	text-transform: uppercase;
 }
+
+.price {
+	font-size: 1.5rem;
+}
+
+.single-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+/* Search Results Page */
+
+.search-results-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+.page-title {
+		text-transform: uppercase;
+}
+
+.entry-content a,
+.entry-summary a  {
+	color: $color__red-shade;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Taxonomy Product Type / Content-Type.php */
+
+.product-type-area {
+	width: 70%;
+	padding-right: 2rem;
+}
+
+.product-type-header {
+	border-bottom: 1px dashed #d2d2d2;
+	margin-bottom: 1.5rem;
+}
+
+.indiv-product-type {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px dashed #d2d2d2;
+}
+
+.product-type-img {
+	width: 25%;
+	padding-right: 1.25rem;
+}
+
+.product-type-content {
+	width: 75%;
+	margin-top: 0;
+}
+
+.product-type-content h2 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.product-type-content p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/* Content-Single.php */
+
+.entry-meta {
+	color: $color__lightgrey;
+}
+
+.entry-footer a,
+.entry-meta a {
+	color: $color__red-shade;
+	text-decoration: none;
+}
+
+blockquote {
+	border-left: 7px solid $color__red-shade;
+	color: $color__med-grey;
+	margin-left: 0;
+	padding-left: 1.5rem;
+	// quotes: "" "";
+}
+
+.cat-links {
+	margin-right: 1rem;
+}
