@@ -1024,6 +1024,11 @@ blockquote {
 .cat-links {
   margin-right: 1rem; }
 
+/* Archive by Month archive.php */
+.month-archive-area {
+  width: 70%;
+  padding-right: 2rem; }
+
 /*--------------------------------------------------------------
 # Contact Page / page.php
 --------------------------------------------------------------*/
