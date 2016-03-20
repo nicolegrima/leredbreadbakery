@@ -118,31 +118,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-// slide 4/33 step 2
-
-// function lrb_comment_close_ajax() {
-//
-// 	check_ajax_referer('lrb_comment_status', 'security');
-// 	//if user can't edit STOP function
-// 	if (! current_user_can('edit_posts') ) {
-// 		exit;
-// 	}
-// 	// to get the post ID no
-// 	$id = $_POST['the_post_id'];
-//
-// 	if (isset($id) && is_numeric($id) ) {
-// 		$the_post = array(
-// 			'ID' => $id,
-// 			'comment_status' => 'closed'
-// 		);
-// 		// array as argument - what is inside array, what WP will update
-// 		wp_update_post( $the_post );
-// 	}
-//
-// 	exit;
-//
-// }
-//
-// add_action('wp_ajax_red_comment_ajax', 'lrb_comment_close_ajax');

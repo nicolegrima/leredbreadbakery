@@ -564,7 +564,8 @@ textarea {
 
 .menu li {
   padding: 1rem;
-  border: 1px solid #e1e1e1; }
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1; }
   .menu li a {
     color: #808080;
     font-weight: bold; }
@@ -832,15 +833,15 @@ a {
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
     color: #400c0d; }
-    .main-navigation .current_page_item > a:after,
-    .main-navigation .current-menu-item > a:after,
-    .main-navigation .current_page_ancestor > a:after {
-      content: "";
-      background-color: #db272a;
-      display: block;
-      height: 3px;
-      margin-top: -3px;
-      width: 100%; }
+
+.current-menu-item:after {
+  content: "";
+  background-color: #db272a;
+  position: absolute;
+  height: 3px;
+  margin-left: -15px;
+  width: 100%;
+  bottom: 0; }
 
 /* Small menu. */
 .menu-toggle,

@@ -47,7 +47,9 @@
 
 .menu li {
   padding: 1rem;
-  border: 1px solid #e1e1e1;
+  // border: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
 
     a {
       color: $color__med-grey;
